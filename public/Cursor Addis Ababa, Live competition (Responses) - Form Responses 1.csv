@@ -1,0 +1,178 @@
+Timestamp,Email Address,Project description ,Github repo(make sure you have transferred the ownership),Demo video from google drive
+8/10/2025 22:31:52,bereketsodeno7@gmail.com,"Desk Roaster Pro™ is a humorous-but-professional desk photo auditor. Users upload a photo of their workspace, and our app analyzes it with Google Gemini Vision to detect objects, assess ergonomics and organization, then generates a tone-aware “executive roast” that’s both witty and actionable. The report includes a long-form summary, key productivity metrics, animated visuals, and tailored recommendations—delivered with the user’s chosen voice (polite, bold, savage, etc.)",https://github.com/Ethiopian-Cursor-Community/deskroaster,https://drive.google.com/file/d/1BvqgdYWQGKtLhIGBppi8H-aqeiSXELtj/view?usp=sharing
+8/10/2025 22:44:24,nahomkasa345@gmail.com,secondhouseMemory,git@github.com:Ethiopian-Cursor-Community/secondhouseMemory.git,https://drive.google.com/file/d/1v4m9pzHek8kLtSzOlMXl1iAVmHfubSXj/view?usp=drivesdk
+8/10/2025 22:48:00,amiraabdurahman8@gmail.com,"FindMeNow is a community-driven web platform designed to accelerate the search for missing persons by combining user reports, police collaboration and social verification. Built with React, TypeScript and Firebase, FindMeNow enables users to securely report missing individuals with detailed information and photos. Admins verify and approve reports, notify relevant police stations and provide real-time updates. The platform also empowers the community to support verifications through likes, enhancing credibility and urgency. By bridging citizens and law enforcement, FindMeNow aims to bring hope and faster resolutions to families affected by disappearances, especially in Ethiopia and beyond.
+
+",https://github.com/Ethiopian-Cursor-Community/FindMeNow,https://drive.google.com/file/d/1F1HEVq9lekvVMRc5VNHvwJiCHFWa6IhW/view?usp=sharing
+8/10/2025 22:48:50,hayat11.mf@gmail.com,"This is a simple, user-friendly, and fully responsive website designed to support newcomer students entering the tech industry. Built with plain HTML, CSS, and JavaScript, it offers a clear and accessible guide for beginners who often feel overwhelmed about where to start their tech journey. The site provides essential information, practical resources, and a step-by-step roadmap to help learners confidently navigate the world of technology.",https://github.com/Ethiopian-Cursor-Community/Cursor-hackaton-project.git,https://drive.google.com/file/d/1xIgtULwYyoNG8FYjN2pJRFehi-zymE3O/view?usp=sharing
+8/10/2025 22:57:14,gizachew980@gmail.com,"Ethio Market Scan is a full‑stack web app that tracks daily prices of key commodities across Ethiopian markets and provides AI‑assisted short‑term price insights. Users can explore trends, filter by city, and get quick predictions with confidence and actionable tips.
+Tech stack
+Backend: FastAPI (backend/main.py) with CORS enabled, Gemini AI integration (Google Generative AI)
+Frontend: React + Vite (client/) with Chart.js visualizations
+Data: Sample datasets in backend/data/dataset.json and client/src/data/prices.json
+Key features
+Interactive dashboard with:
+Market and commodity selection (e.g., onion, teff, tomato)
+Line chart of recent prices
+Latest price and percent change indicators
+Featured items ranked by highest price movement, with optional city filter
+Natural language search (“onion in Merkato”) to auto-select market/commodity
+AI insights: concise prediction, confidence score, and a short tip
+Resilient UX: seeds UI from local JSON and upgrades with backend data if available
+Data & AI
+Data model includes markets, items, dates, metadata (currency, unit, city)
+AI predictions via Gemini using a structured prompt; fallback text if API key isn’t set
+Configure GEMINI_API_KEY in backend/.env; endpoints include /markets, /commodities/{market}, /prices/{market}/{commodity}, /predict, /featured, /sample-data
+Who it’s for
+Traders, consumers, and policymakers needing quick, visual price tracking and lightweight AI guidance for buy/sell timing.
+Backend dev: run FastAPI; Frontend dev: Vite dev server; both work together locally.
+Summary:
+Full‑stack price monitoring for Ethiopian markets with AI insights
+React dashboard + Chart.js; FastAPI + Gemini backend
+Local JSON data with optional live API enrichment",https://github.com/Ethiopian-Cursor-Community/Ethio-market-scan,https://www.awesomescreenshot.com/video/42982601?key=0c870cc1ab949539c4421bbe5de16997
+8/10/2025 22:57:25,nahiyo86@gmail.com,"A fast, offline-friendly web app to help people in Ethiopia quickly find and call the nearest emergency services — and to demo next-gen community response flows in a hackathon setting.",https://github.com/Ethiopian-Cursor-Community/MEA,https://drive.google.com/file/d/1vduEYbaO58he7TLD4wODXsohXCDQdV2m/view?usp=sharing
+8/10/2025 22:57:39,birukjember2004@gmail.com,"LoackIn is a smart study companion that classifies students into effective study methods via a smart questionnaire, generates personalized study plans with AI, and keeps users on track with focus mode and motivational features.",https://github.com/Ethiopian-Cursor-Community/lockin,https://www.awesomescreenshot.com/video/42982826?key=1bb1b60ed7d35bd345ec5e20e491ee8b
+8/10/2025 22:57:41,birtukankuma1113@gmail.com,"Lawyer finder web app: I allows lawyers add their description including name, location, Price, and their specialization and customers can select lawyers based on their case preference.",https://github.com/Ethiopian-Cursor-Community/Cursor_miniProject,https://drive.google.com/file/d/1wRkHn6uxs2LzXHS824HLkYfAAGEJrNFK/view?usp=sharing
+8/10/2025 22:58:03,tsehayneshbiruh2@gmail.com,"FixMyHood is a mobile-friendly web app designed to empower communities by simplifying local issue reporting and resolution. Residents can easily report problems like road damage or water leaks with photos and precise locations. The platform features community prioritization through upvoting, ensuring the most pressing issues get attention. Progress tracking keeps everyone informed from “Open” to “Resolved” status. Powered by AI, FixMyHood suggests the right contacts and actionable steps to accelerate solutions. By connecting residents, local authorities, and service providers, FixMyHood fosters transparency, accountability, and faster community-driven improvements.",https://github.com/tsi1221/CursorHackathon/tree/cursor/build-addis-ababa-fixmyhood-app-722c,https://drive.google.com/file/d/1DhO7sa9gNZJPrLq1DG2Ko3qhsIb9P2ry/view?usp=drivesdk
+8/10/2025 22:58:35,hewansg@gmail.com,"A tiny, funny meme helper built with Vite + React + Tailwind. Type a thought (or use the mic), pick a humor style, hit Generate, and we’ll fetch a relevant reaction GIF to match the vibe.",https://github.com/Ethiopian-Cursor-Community/Meme-Generator,https://drive.google.com/file/d/1JRLPpw8JbKOlPIRM37JE86iMeyTo-9fZ/view?usp=sharing
+8/10/2025 22:59:42,fuadgetachew2@gmail.com,"The Automated Filtering Platform is a web-based tool designed to streamline the process of finding and evaluating professionals by automatically aggregating and filtering profile data from multiple sources like GitHub and LinkedIn. It provides recruiters and teams with fast, comprehensive, and up-to-date candidate information in one unified interface, significantly reducing manual research time and improving hiring decisions.
+",https://github.com/Ethiopian-Cursor-Community/Filterfast,https://drive.google.com/drive/folders/14T8VY2L_ed_sMJkcf51RCEq_81IQmuyS?usp=sharing
+8/10/2025 23:00:32,kirubelwinner@gmail.com,"The projects name is CoHustle. CoHustle is a modern web application that helps users find personalized side hustle opportunities using AI. This platform matches users with side hustles based on their location, interests, and available time.",https://github.com/Kirubel-Eshetu/CoHustle.git,"Sorry, couldn't make it happen because of connection issue."
+8/10/2025 23:01:43,kirubelwinner@gmail.com,"Find Your Perfect Side Hustle
+Discover personalized side hustle opportunities that match your skills, location, and schedule. Powered by AI to find the best opportunities for you.",https://github.com/Kirubel-Eshetu/CoHustle.git,"Sorry, couldn't make it happen due to network issue."
+8/10/2025 23:01:56,Natnael337@gmail.com,Django-Lego-Plate,yes ,https://docs.google.com/videos/d/1ZgaPzSrpwv5fQCEWguLxmkhHMAKIWjtWfvp4AUWpJXA/edit?usp=sharing
+8/10/2025 23:05:51,birtukankuma1113@gmail.com,"Lawyer finder web app: I allows lawyers add their description including name, location, Price, and their specialization and customers can select lawyers based on their case preference.",https://github.com/Ethiopian-Cursor-Community/Cursor_miniProject,https://drive.google.com/file/d/1NUIzmrd288U6wpI0-aNYJIu9vxsfac0U/view?usp=sharing
+8/10/2025 23:09:33,temkinabdulmelik@gmail.com,"🏆 HealthMate - AI-Powered Health Companion
+Project Description:
+HealthMate is a revolutionary AI-powered health tracking and wellness platform that transforms how people monitor and optimize their health journey. Built with cutting-edge technology, it combines intelligent analytics, predictive insights, and stunning design to create the ultimate health companion.
+Key Features:
+🧠 AI-Powered Health Intelligence - Advanced machine learning algorithms provide personalized health insights and recommendations
+📊 Predictive Analytics - Anticipate health trends before they become problems with intelligent pattern recognition
+🎯 Smart Goal Optimization - AI-driven recommendations for achieving health goals faster and more effectively
+💪 Comprehensive Health Tracking - Monitor exercise, sleep, nutrition, hydration, mood, and symptoms in one unified platform
+🎨 Award-Winning Design - Stunning UI/UX with smooth animations and responsive design for all devices
+🔒 Enterprise Security - Bank-level encryption protecting sensitive health data
+📱 Universal Compatibility - Perfect experience on mobile, tablet, and desktop
+Technical Excellence:
+Next.js 14 with TypeScript for bulletproof, type-safe code
+Tailwind CSS for rapid development and beautiful, consistent design
+Framer Motion for professional-grade animations
+Firebase for scalable, reliable backend infrastructure
+React Hook Form for efficient, accessible form handling
+Responsive Design optimized for all devices and screen sizes
+Innovation Highlights:
+AI Health Insights Engine - Smart pattern recognition and personalized recommendations
+Real-time Analytics Dashboard - Dynamic health scoring and interactive visualizations
+Predictive Health Analytics - Early warning system for potential health issues
+Gamified Achievement System - Motivational milestones that keep users engaged
+Demo Mode - Instant access to explore all features without setup
+Why It Stands Out:
+HealthMate isn't just another health app—it's a comprehensive wellness companion that leverages AI to provide intelligent, personalized health guidance. The combination of cutting-edge technology, beautiful design, and user-centric features creates an experience that's both powerful and enjoyable to use.
+Live Demo:
+Experience the future of health tracking at: https://healthmate-demo.vercel.app
+GitHub Repository: https://github.com/Temkin236/Cursor-competition-Healthmate
+This description emphasizes the AI capabilities, technical excellence, and user experience that make HealthMate a standout project! 🏆
+",https://github.com/Ethiopian-Cursor-Community/Healthmate,https://drive.google.com/file/d/1dR8Q9cHkYrzQC0oCe9rNbNOlM4n9lXfw/view?usp=sharing
+8/10/2025 23:10:03,nahiyo86@gmail.com,"A smart, one-tap emergency response platform for Ethiopia.
+It connects users instantly to the nearest police, ambulance, and fire services, while also activating Panic Mode for live location tracking, linking them with nearby trained citizen responders, and providing an Emergency Health Passport for first-aid teams. Designed for speed, simplicity, and real-life impact, it turns your phone into a personal safety hub.",https://github.com/Ethiopian-Cursor-Community/MEA,https://drive.google.com/file/d/1Ox1UToN1s3zRHr92D2n3QWKbzShXTtR6/view?usp=sharing
+8/10/2025 23:14:12,abeladamushumet@gmail.com,Smart-resume+cover-letter,https://github.com/abeladamushumet/smart-resume-cover-letter,https://drive.google.com/file/d/12XfzSnSaQXSd8MjWIEKv2t4mckf5DEKt/view?usp=sharing
+8/10/2025 23:14:47,fraolashebir84@gmail.com,"FlashQuiz is an AI-powered quiz generator that turns any text into multiple-choice questions in seconds. Paste notes or upload a .txt file, choose how many questions to create, and get instant red/green feedback with a final score and review mode. Built with React + Vite and Tailwind CSS, it features a sleek glassmorphism UI, light/dark theme toggle, a real-time progress bar, and fully responsive design. Uses Gemini 2.5 Pro (with a local placeholder fallback) and supports flexible, user-friendly navigation across questions.",https://github.com/Ethiopian-Cursor-Community/flashquiz-ai,https://drive.google.com/file/d/1qHtJphPrIVVig1ChU6Na-mV1snNGTtOr/view?usp=sharing
+8/10/2025 23:20:20,gizachew980@gmail.com,"
+Overview
+Ethio Market Scan is a full‑stack web app that tracks daily prices of key commodities across Ethiopian markets and provides AI‑assisted short‑term price insights. Users can explore trends, filter by city, and get quick predictions with confidence and actionable tips.
+Tech stack
+Backend: FastAPI (backend/main.py) with CORS enabled, Gemini AI integration (Google Generative AI)
+Frontend: React + Vite (client/) with Chart.js visualizations
+Data: Sample datasets in backend/data/dataset.json and client/src/data/prices.json
+Key features
+Interactive dashboard with:
+Market and commodity selection (e.g., onion, teff, tomato)
+Line chart of recent prices
+Latest price and percent change indicators
+Featured items ranked by highest price movement, with optional city filter
+Natural language search (“onion in Merkato”) to auto-select market/commodity
+AI insights: concise prediction, confidence score, and a short tip
+Resilient UX: seeds UI from local JSON and upgrades with backend data if available
+Data & AI
+Data model includes markets, items, dates, metadata (currency, unit, city)
+AI predictions via Gemini using a structured prompt; fallback text if API key isn’t set
+Configure GEMINI_API_KEY in backend/.env; endpoints include /markets, /commodities/{market}, /prices/{market}/{commodity}, /predict, /featured, /sample-data
+Who it’s for
+Traders, consumers, and policymakers needing quick, visual price tracking and lightweight AI guidance for buy/sell timing.
+Backend dev: run FastAPI; Frontend dev: Vite dev server; both work together locally.
+Summary:
+Full‑stack price monitoring for Ethiopian markets with AI insights
+React dashboard + Chart.js; FastAPI + Gemini backend
+Local JSON data with optional live API enrichment",https://github.com/Ethiopian-Cursor-Community/Ethio-market-scan,https://www.awesomescreenshot.com/video/42983099?key=a43974abc3c503a118fb3a2641e72568
+8/11/2025 0:25:03,temesgenabdissa2@gmail.com,"Best Features of AGRINK / AgriLink Platform
+1. Direct Buyer–Seller Connection
+Eliminates middlemen by letting farmers and sellers connect directly with buyers (consumers, retailers, restaurants, exporters).
+
+Increases farmer income and ensures buyers get fresh produce at fair prices.
+
+2. Location-Based Marketplace
+Products are organized by specific markets (e.g., Holeta, Senaga Tera).
+
+Buyers can filter and browse within a chosen location for quick, relevant results.
+
+Sellers can add new market locations to expand reach.
+
+3. Rich Product Listings
+Sellers can upload images, videos, descriptions, prices, quantity, and location for each product.
+
+Posts include posted date and seller details for transparency.
+
+Integrated automatic quantity tracking removes or updates listings when items sell out.
+
+4. Real-Time Price Insights
+Displays live market prices from multiple locations so farmers know when and where to sell.
+
+Reduces exploitation by middlemen and increases negotiation power.
+
+5. Smart Search & Recommendations
+Buyers can search by keywords or within a specific market.
+
+Search results improve over time using browsing history and interest-based recommendations.
+
+6. Built-In Communication
+In-app chat lets buyers and sellers negotiate, request details, and arrange logistics without leaving the platform.
+
+Supports multi-language communication for accessibility.
+
+7. Secure Local Payments
+Integrates with Ethiopian payment solutions like Telebirr and M-Pesa.
+
+Handles automatic payment confirmation and inventory updates after purchase.
+
+8. Logistics & Delivery Coordination
+Connects buyers and sellers with local transport providers to handle delivery.
+
+Supports post-purchase booking of transport for smoother transactions.
+
+9. Group Selling for Cooperatives
+Farmers can combine stock to sell in bulk, attracting large buyers and better pricing.
+
+Reduces transport costs per seller.
+
+10. Offline-First Technology
+Works even in low-internet or rural areas via SMS/USSD posting.
+
+Syncs data automatically when internet access is restored.
+
+11. AI-Powered Demand Forecasting
+Predicts future demand and prices using past sales trends, market data, and weather patterns.
+
+Helps farmers choose profitable crops and optimal selling times.
+
+What This System Can Do
+Empower Farmers: Gives smallholder farmers direct market access, fair prices, and sales transparency.
+
+Help Buyers: Provides fresher produce, verified sellers, and market-specific browsing.
+
+Boost Food Security: Reduces post-harvest losses and connects supply with demand efficiently.
+
+Improve Rural Economy: Increases farmer income, creates delivery job opportunities, and stimulates local trade.
+
+Enable Smarter Agriculture: Uses data insights to guide production and marketing strategies.
+
+",AGrilink_cursor_hackathon,https://youtu.be/PJMp0oIBxB8
