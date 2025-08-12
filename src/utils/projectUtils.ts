@@ -103,4 +103,41 @@ export function inferTags(text: string): string[] {
   if (t.includes('openai')) add('OpenAI')
   if (t.includes('ai')) add('AI')
   return Array.from(tags)
+}
+
+export function thumbnailCandidates({ demoUrlRaw, githubUrl }: { demoUrlRaw?: string | null, githubUrl?: string | null }): string[] {
+  const candidates: string[] = []
+  const demo = (demoUrlRaw || '').trim()
+
+  // YouTube best -> fallback
+  const yt = demo.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{6,})/)
+  if (yt) {
+    const id = yt[1]
+    candidates.push(
+      `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`,
+      `https://img.youtube.com/vi/${id}/hqdefault.jpg`,
+      `https://img.youtube.com/vi/${id}/mqdefault.jpg`
+    )
+  }
+
+  // Google Drive thumbnail with size hint
+  const drive = demo.match(/drive\.google\.com\/file\/d\/([^/]+)/)
+  if (drive) {
+    const id = drive[1]
+    candidates.push(
+      `https://drive.google.com/thumbnail?id=${id}&sz=w1200`,
+      `https://drive.google.com/thumbnail?id=${id}`
+    )
+  }
+
+  // GitHub Open Graph image
+  if (githubUrl) {
+    const full = fullNameFromGithubUrl(githubUrl)
+    if (full) {
+      candidates.push(`https://opengraph.githubassets.com/1/${full}`)
+    }
+  }
+
+  // Remove duplicates
+  return Array.from(new Set(candidates))
 } 

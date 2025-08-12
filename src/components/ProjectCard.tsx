@@ -2,12 +2,16 @@ import { Link } from 'react-router-dom'
 import { Github, Play } from 'lucide-react'
 import type { Project } from '../data/projects'
 import { useState } from 'react'
+import ImgWithFallback from './ImgWithFallback'
 
 export default function ProjectCard({ project }: { project: Project }) {
   const [expanded, setExpanded] = useState(false)
   const maxChars = 140
   const shouldClamp = project.description.length > maxChars
   const shown = expanded ? project.description : project.description.slice(0, maxChars)
+
+  // @ts-ignore runtime-only property from loader
+  const candidates: string[] | undefined = (project as any).imageCandidates
 
   return (
     <div className="card-surface overflow-hidden group">
@@ -17,8 +21,10 @@ export default function ProjectCard({ project }: { project: Project }) {
         aria-label={`Open ${project.title}`}
       >
         <div className="aspect-video w-full bg-zinc-900/60 flex items-center justify-center">
-          {project.image ? (
-            <img src={project.image} alt={project.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" loading="lazy" />
+          {candidates && candidates.length ? (
+            <ImgWithFallback srcs={candidates} alt={project.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
+          ) : project.image ? (
+            <img src={project.image} alt={project.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" loading="lazy" decoding="async" />
           ) : (
             <div className="text-zinc-600">No preview</div>
           )}

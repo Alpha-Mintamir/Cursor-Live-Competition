@@ -1,6 +1,6 @@
 import Papa from 'papaparse'
 import type { Project } from './projects'
-import { toSlug, normalizeGithubUrl, repoNameFromGithubUrl, titleFromRepoName, toEmbedUrl, inferTags, thumbnailFromDemo, fullNameFromGithubUrl } from '../utils/projectUtils'
+import { toSlug, normalizeGithubUrl, repoNameFromGithubUrl, titleFromRepoName, toEmbedUrl, inferTags, fullNameFromGithubUrl, thumbnailCandidates } from '../utils/projectUtils'
 
 const CSV_PATH = "/Cursor%20Addis%20Ababa,%20Live%20competition%20(Responses)%20-%20Form%20Responses%201.csv"
 
@@ -48,7 +48,6 @@ export async function loadProjectsFromCsv(): Promise<Project[]> {
     const title = repoName ? titleFromRepoName(repoName) : (desc && desc.length <= 40 ? desc : 'Project ' + counter)
     const slug = repoName ? toSlug(repoName) : toSlug(`${title}-${counter}`)
     const demoUrl = toEmbedUrl(demoRaw)
-    const thumb = thumbnailFromDemo(demoRaw)
     const tags = inferTags(desc)
 
     const winnerRank = repoName && WINNERS[repoName] ? (WINNERS[repoName] as 1|2|3|4|5) : undefined
@@ -62,6 +61,8 @@ export async function loadProjectsFromCsv(): Promise<Project[]> {
     }
     seenKeys.add(key)
 
+    const candidates = thumbnailCandidates({ demoUrlRaw: demoRaw, githubUrl: githubUrl || undefined })
+
     projects.push({
       id: `csv-${counter}`,
       slug,
@@ -71,7 +72,9 @@ export async function loadProjectsFromCsv(): Promise<Project[]> {
       tags,
       githubUrl: githubUrl || '#',
       demoUrl: demoUrl || undefined,
-      image: thumb || undefined,
+      image: candidates[0] || undefined,
+      // @ts-ignore add runtime-only imageCandidates for UI fallback handling
+      imageCandidates: candidates,
       winnerRank
     })
 
