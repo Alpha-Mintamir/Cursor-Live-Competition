@@ -1,11 +1,12 @@
 import Hero from '../components/Hero'
-import Carousel from '../components/Carousel'
 import { useProjects } from '../data/useProjects'
 import Judges from '../components/Judges'
+import WinnersSpotlight from '../components/WinnersSpotlight'
 
 export default function Home() {
   const { projects, loading } = useProjects()
-  const winners = projects.slice(0, 3)
+  // Select explicit top 5 winners based on winnerRank
+  const winners = projects.filter(p => p.winnerRank && p.winnerRank <= 5)
   return (
     <div>
       <Hero />
@@ -39,7 +40,7 @@ export default function Home() {
         {loading ? (
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">Loading…</div>
         ) : (
-          <Carousel items={winners} />
+          <WinnersSpotlight items={winners} />
         )}
       </div>
 

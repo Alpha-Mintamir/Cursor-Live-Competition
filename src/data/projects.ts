@@ -11,7 +11,7 @@ export interface Project {
   githubUrl: string
   websiteUrl?: string
   featured?: boolean
-  winnerRank?: 1 | 2 | 3
+  winnerRank?: 1 | 2 | 3 | 4 | 5
 }
 
 export const projects: Project[] = [
